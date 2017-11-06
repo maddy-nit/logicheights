@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Logic Heights";
+}
+@section head {
+
+    @*<link href="/content/css/service/inner.css" rel="stylesheet" type="text/css" />*@
+}
+
+@section header {
+    <header>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="wrapper">
+                    @Html.ActionLink("Logic Heights", "Index", "Home", null, new { @class = "logo" })
+                    <nav>
+                        <ul class="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li class="active">@Html.ActionLink("Services", "Services", "Home")</li>
+                            <li><a href="/wordpress">Blogs</a></li>
+                            @*<li>@Html.ActionLink("Blog", "Blog", "Home")</li>*@
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+}
+
+@section featured {
+
+}
+
+@section inner {
+    <div id="content">
+        <div class="inner pad1">
+            <div class="container_12">
+                <div class="wrapper h-pad">
+                    <!-- BEGIN CONTENT -->
+                    <div id="content_container">
+                        <div class="centercolumn">
+                            <div id="maincontent">
+                                <div id="content_full">
+                                    <img src="/content/images/page.jpg" />
+                                </div><!-- end content full -->
+                            </div><!-- end maincontent -->
+                        </div>
+                    </div><!-- end content container -->
+                    <!-- END CONTENT -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+@section scripts {
+
+
+
+
+}
+
+

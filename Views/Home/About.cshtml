@@ -1,0 +1,174 @@
+﻿@{
+    ViewBag.Title = "Logic Heights";
+}
+@section head {
+}
+
+@section header {
+    <header>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="wrapper">
+                    @Html.ActionLink("Logic Heights", "Index", "Home", null, new { @class = "logo" })
+                    <nav>
+                        <ul class="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li class="active">@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                            <li><a href="/wordpress">Blogs</a></li>
+                            @*<li>@Html.ActionLink("Blog", "Blog", "Home")</li>*@
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+}
+
+@section featured {
+
+}
+
+@section inner {
+    <div id="content">
+        <div class="inner pad1">
+            <div class="container_12">
+                <div class="wrapper h-pad">
+                    <div class="grid_7">
+                        <div id="content">
+                            <h3 style="font-family:  'Century Gothic';font-weight: bold">ABOUT US</h3><br />
+                            <div class="grey_box">
+                                <h1 class="tblue">Who are we</h1>
+                                <p>Logic Heights is an IT Solutions Company, founded in 2014 with the objective to deliver IT solutions for Software Development & Implementation, Website Designing, ERP, SEO and Cloud Services. </p>
+                                <p> We are expertise in providing responsive web solutions and best SEO services to clients.</p>
+                            </div><!-- end grey box -->
+                            <br />
+                            <div class="grey_box">
+                                <h2 class="tblue" id="mission" style="flood-color: #FF4500;font-weight:100;font-family:'Arial Unicode MS'">Vision and Mission</h2>
+                                <p>Our vision is to provide best in class IT solutions to our clients and help them grow their bussiness with competitive advantage. Our mission strives to fulfill and deliver solutions for ultimate customer satisfaction by ensuring the world class quality of professional services, and a flexible global delivery model. </p>
+                            </div><!-- end grey box -->
+
+                            <br />
+
+                            @*<h2 id="founders" class="tblue" style="flood-color: #FF4500;font-weight:100;font-family:'Arial Unicode MS'">Meet the founders</h2>
+                                    <ul class="team">
+                                        <li>
+                                            <div class="block">
+                                                <div class="grid_8">
+                                                    <div class="grid-inner">
+                                                        <div class="wrapper">
+                                                            <figure class="img-indent"><img src="/content/images/maddy.jpg" alt=""></figure>
+                                                            <span class="tbold">
+                                                                Mr. Monti Chandra<br />
+                                                                Founder &amp; President
+                                                                <br/>MCA, MNNIT ALLAHABAD
+                                                            </span><p style="font-size:small">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam </p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <br />
+                                        <li>
+                                            <div class="block">
+                                                <div class="grid_8">
+                                                    <div class="grid-inner">
+                                                        <div class="wrapper">
+                                                            <figure class="img-indent"><img src="/content/images/alok.jpg" alt=""></figure>
+                                                            <span class="tbold">
+                                                                Mr. Alok Mishra<br />
+                                                                Chief Operating Officer
+                                                            <br/> B.Tech.
+                                                            </span><p style="font-size:small">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam </p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                     </ul>
+
+                                <br/>
+                                    <h2 id="founders" class="tblue" style="flood-color: #FF4500;font-weight:100;font-family:'Arial Unicode MS'">Our Team</h2>
+                                    <ul class="team">
+
+                                        <li>
+                                            Mr. XXXX
+                                        </li>
+                                        <br />
+                                        <li>
+                                            Mr. XXXX
+                                        </li>
+                                        <br />
+                                        <li>
+                                            Mr. XXXX
+                                        </li>
+                                        <br />
+                                        <li>
+
+                                        </li>
+                                    </ul>*@
+                        </div><!-- end content -->
+
+                    </div>
+                    <div class="grid_4 prefix_1">
+                        <div class="sidebox">
+                            <h2>More About Us</h2>
+                            <ul>
+                                <li><a href="#">Overview</a></li>
+                                <li><a href="#mission">Vision and Mission</a></li>
+                                @*<li><a href="#founders">Meet the founders</a></li>*@
+                                <li><a href="@Url.Action("Services", "Home")">Services</a></li>
+                                @*<li><a href="@Url.Action("Blog", "Home")">Blog</a></li>*@
+                                <li><a href="@Url.Action("Contact", "Home")">Contact Us</a></li>
+                            </ul>
+                        </div><!-- end sidebox -->
+                        <br />
+                        <div class="sidebox">
+                            <h2>Our Social Services</h2>
+                            <ul>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://lhcat.logicheights.com"><img src="/content/images/clients/lhcatlogo.png" alt=""></a></li>
+                            </ul>
+                        </div><!-- end sidebox -->
+                        <br />
+
+                        @*<div class="sidebox">
+                            <h2>Testimonial</h2>
+                            <div class="ticker">
+                                <ul class="nolist"></ul>
+                            </div><!-- end ticker -->
+                            <div class="navscroll">
+                                <a href="#" class="prev_item">Prev</a>
+                                <a href="#" class="next_item">Next</a>
+                            </div><!-- end navscroll -->
+                        </div><!-- end sidebox -->*@
+
+                    </div>
+                </div> <br />
+                <div class="wrapper">
+                    <div class="grid_12">
+                        <h2 class="h-pad">Our Clients</h2>
+                        <ul class="clients-list">
+                            <li><a href="http://www.thetoyhome.com/"><img src="/content/images/clients/client1.png" alt=""></a></li>
+                            <li><a href="http://www.vedikaincense.com/"><img src="/content/images/clients/client2.png" alt=""></a></li>
+                          
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+@section scripts {
+
+
+
+
+}

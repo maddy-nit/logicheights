@@ -1,0 +1,59 @@
+/* 
+
+Brightster - CSS File
+
+*/
+.grey_box{background-color:#f5f5f5; padding:10px 20px 5px 20px; margin:30px 0px;}
+ul.team{margin:0px; padding:0px; list-style-type:none;}
+ul.team li{margin-bottom:20px;}
+.tbold{font-weight:bold; font-size:14px;}
+ul.nolist li{background-image:none !important; padding:0px !important; margin:0px !important;}
+
+/* Services */
+.service_box{width:420px; float:left; margin-right:100px; margin-bottom:40px;}
+.service_box.nomargin{margin-right:0px;}
+.more{background-color:#f6f6f6; padding:6px 6px 6px 20px; background-image:url(../images/bg_readmore.gif); background-repeat:no-repeat; background-position:right; margin:20px 0px 0px 0px}
+.more a, .more a:visited{color:#333;}
+
+/*Portfolio*/
+ul.pf{margin:0px; padding:0px; list-style-type:none;}
+ul.pf li{background-color:#f4f4f4; width:270px; float:left; border:solid 1px #e5e5e5; padding:14px; margin:0px 20px 20px 0px}
+ul.pf li.nomargin{margin-right:0px;}
+.pf h2 a{color:#333;}
+ul.pf p{margin-bottom:10px;}
+.navigation{text-align:right;}
+.navigation a, .navigation a:visited{padding:0px 6px; background-color:#fefefe; border:solid 1px #f5f5f5; margin:0px 3px; color:#333}
+.navigation a.active{background-color:#ededed; border:solid 1px #f5f5f5;}
+
+/* blog */
+.post{margin-bottom:40px;}
+.post img{margin-bottom:8px;}
+.post h2{margin-bottom:5px;}
+.post h2 a, .post h2 a:visited{color:#666;}
+.post .metadata a, .post .metadata a:visited{color:#999999;}
+.post .metadata{color:#999999; font-size:11px; text-align:right; padding:0px 0px 10px 0px}
+.post .author{text-align:left; float:left;}
+.post .more a, .post .more a:visited{color:#333;}
+
+
+/* contact */
+form{margin:0; padding:0;}
+fieldset{border:0px;}
+#contact_form{margin:0 auto; position:relative}
+label{margin:3px 0px;}
+label.sp { width:3px;}
+span.error{color:red;text-align:left;}
+
+#message{ margin-left:0px;}
+#message h2	{}
+#message p{margin:6px 0px; }
+
+input.text-input{ margin:4px 8px 4px 0px; width: 280px; height:15px; padding:5px 2px; border:solid 1px #e4e4e4; vertical-align:middle}
+textarea.text-input{ margin:0px 8px 4px 0px; padding: 5px 2px; border:solid 1px #e4e4e4; vertical-align:top; width:380px;}
+#contact_form input:focus, #contact_form textarea:focus {border:solid 1px #e4e4e4; }
+input.text-input{width: 320px; margin:3px 0px 6px 0px}
+textarea.text-input{width: 320px; margin:0px}
+span.error{color:red;text-align:left;}
+input.button{background-color:#f6f6f6; background-image:url(../images/bg_readmore.gif); background-repeat:no-repeat; background-position:right; color:#333333 !important; padding:5px 10px 8px 13px; width:100px; text-align:left; height: 30px; display:block; margin-top:10px; border:0px;cursor:pointer;}
+
+

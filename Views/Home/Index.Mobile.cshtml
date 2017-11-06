@@ -1,0 +1,147 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
+    ViewBag.Title = "Logic Heights";
+}
+@section head {
+
+}
+@section header {
+    <header>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="wrapper">
+                    @Html.ActionLink("Logic Heights", "Index", "Home", null, new { @class = "logo" })
+
+                    <nav>
+                        <ul class="menu">
+                            <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                            <li><a href="/wordpress">Blogs</a></li>
+                            @*<li>@Html.ActionLink("Blog", "Blog", "Home")</li>*@
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+}
+
+@section featured {
+    <div id="slider">
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+
+                    <div data-src="/content/images/wrapper/slide1.png">
+                        <div class="camera_caption fadeIn">
+                            <h2>Sculpting Thoughts into Logic...</h2>
+                            Whatever’s on our mind at that moment determines our "Logic", SO we carve your Applications like a sculpture.
+                            <p><a href="#" class="button">More Info</a></p>
+                        </div>
+                    </div>
+
+                    <div data-src="/content/images/wrapper/slide2.png">
+                        <div class="camera_caption fadeIn">
+                            <h2>Mobile Application Development</h2>
+                            Our Mobile app developement team replaces mobile browsing to Mobile App
+                            <p><a href="#" class="button">More Info</a></p>
+                        </div>
+                    </div>
+                    <div data-src="/content/images/wrapper/slide3.png">
+                        <div class="camera_caption fadeIn">
+                            <h2>Web Design & Development</h2>
+                            Client Focused and Bussiness awared Responsive Websites with Latest Trends that help us to make your site User Centered.
+                            <p><a href="#" class="button">More Info</a></p>
+                        </div>
+                    </div>
+                    <div data-src="/content/images/wrapper/slide4.png">
+                        <div class="camera_caption fadeIn">
+                            <h2>Re-engineering And Optimization</h2>
+                            Our Team affects your visibility on Web...
+                            <p><a href="#" class="button">More Info</a></p>
+                        </div>
+                    </div>
+                    <div data-src="/content/images/wrapper/slide5x.jpg">
+                        <div class="camera_caption fadeIn">
+                            <h2>Enterprise Resource Planning</h2>
+                            We provide world class ERP solutions to grow your bussiness with competitive advantage.
+                            <p><a href="#" class="button">More Info</a></p>
+                        </div>
+                    </div>
+                    @*<div data-src="/content/images/wrapper/slide6.png">
+                            <div class="camera_caption fadeIn">
+                                <h2>Cloud Web Services</h2>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <p><a href="#" class="button">More Info</a></p>
+                            </div>
+                        </div>*@
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section inner {
+    <div class="inner">
+        <div class="container_12">
+            <div class="wrapper">
+                <div class="grid_12">
+                    <div class="block">
+                        <div class="info-block">
+                            @*<a href="#" class="link">Click here</a> Our people are our greatest asset and They are passionate about latest technologies. *@"WITH AN EXTENSIVE KNOWLEDGE IN INFORMATION TECHNOLOGY,
+                            EACH MEMBER OF OUR TEAM ALWAYS TRY TO EXPLORE HIS POTENTIAL AND GRAPS THE
+                            OPPORTUNITY TO ENHANCE HIS TALENT WITH AN INTENTION FOR CUSTOMER SATISFACTION..”
+                        </div>
+                        <a href="@Url.Action("About", "Home")" class="button">Our Team!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="block">
+                    <div class="grid_8">
+                        <div class="grid-inner">
+                            <h2>Hello There!</h2>
+                            <div class="wrapper">
+                                <figure class="img-indent"><img src="/content/images/image1.jpg" alt=""></figure>
+                                The world of IT product and service has been changed very rapidly and we will see many innovative technologies in near future. As the technology change business community to switch their business model being competed in Rapid business market. Logic Heights is Web based IT software and service provider from India.
+                                Logic Heights provides Client Centered Software Solutions by extensive use hot and latest trends of software development.
+
+                            </div>
+                            <p class="pad"> For more info about Logic Heights. <a href="@Url.Action("About", "Home")">Click here</a></p>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <h2>Testimonials</h2>
+                        <div class="testimonial-block">
+                            <em>The logic of codes should yield to the Application.</em>
+                            @*<p><strong>— Monti Chandra</strong></p>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="grid_12">
+                    <h2 class="h-pad">Our Clients</h2>
+                    <ul class="clients-list">
+                        <li><a href="http://www.thetoyhome.com/"><img src="/content/images/clients/client1.png" alt=""></a></li>
+                        <li><a href="http://www.vedikaincense.com/"><img src="/content/images/clients/client2.png" alt=""></a></li>
+                        <li><a href="#"><img src="/content/images/clients/client3.png" alt=""></a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts {
+
+
+
+
+}

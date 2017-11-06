@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @*<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/bundles/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+    <title>Logic Heights</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/Content/images/favicon.png" type="image/png">
+    <link rel="icon" href="~/Content/images/favicon.png" type="image/png">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/content/css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/content/css/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/content/css/camera.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/content/css/style.css" type="text/css" media="screen">
+    <script src="/scripts/js/jquery.js"></script>
+    <script src="/scripts/js/jquery-migrate-1.1.1.js"></script>
+    <script src="/scripts/js/camera.js"></script>
+    <script src="/scripts/js/jquery.easing.1.3.js"></script>
+    <script>
+        jQuery(function () {
+            jQuery('#camera_wrap_1').camera({
+                height: '317px',
+                loader: false,
+                pagination: false,
+                thumbnails: false
+            });
+        });
+    </script>
+  @RenderSection("head", required: false)
+</head>
+<body>
+    @RenderSection("header", required: false)
+    <div id="content">
+
+        @RenderSection("featured", required: false)
+        @RenderSection("inner", required: false)
+        </div>
+    <footer>
+        <div class="container_12">
+            <div class="wrapper">
+                <div class="grid_8"> &copy; Logic Heights </div>
+                <div class="grid_4">
+                    <div class="social"> @*My Social:<a href="#"><img src="/content/images/facebook-icon.png" alt=""></a><a href="#"><img src="/content/images/twitter-icon.png" alt=""></a>*@ </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @RenderSection("scripts", required: false)
+        @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+     
+</body>
+</html>

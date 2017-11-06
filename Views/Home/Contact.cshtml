@@ -1,0 +1,118 @@
+@model Logic_Heights.Models.ContactModel
+@{
+    ViewBag.Title = "Logic Heights";
+    var message = TempData["AlertMessage"] ?? string.Empty;
+}
+
+@section head {
+
+}
+@section header {
+    <header>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="wrapper">
+                    @Html.ActionLink("Logic Heights", "Index", "Home", null, new { @class = "logo" })
+                    <nav>
+                        <ul class="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                            <li><a href="/wordpress">Blogs</a></li>
+                            @*<li>@Html.ActionLink("Blog", "Blog", "Home")</li>*@
+                            <li class="active">@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+}
+
+@section featured {
+    
+}
+
+@section inner {
+   <div id="content">
+    <div class="inner pad1">
+        <div class="container_12">
+            <div class="wrapper h-pad">
+                <div class="grid_7">
+                    <h2>Contact Info</h2>
+                    <div class="wrapper">
+                        <div class="grid_4 alpha">
+                            <figure>
+                                @*<div id="map_canvas" class="pic" style="border: 1px solid #fff;width: 292px;height: 254px;"></div>*@
+                                <div><iframe width="295" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1750.747812953517!2d77.35937100000001!3d28.644875000000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfab6e678dfc9%3A0x1029c4e4029b7be1!2sLogic+Heights!5e0!3m2!1sen!2sin!4v1403176792285"></iframe><br />
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="grid_3 omega">
+                            <div class="contacts">
+                                <strong class="title">Logic Heights</strong> Gyan Khand IV, Indirapuram<br/>
+Ghaziabad, Uttar Pradesh 201014 <br>
+                               
+                                @*Glasgow, D04 89GR.<br>
+                                Freephone:+1 800 559 6580<br>
+                                Telephone:+1 800 603 6035<br>
+                                FAX:+1 800 889 9898<br>*@
+                                E-mail: <a href="" class="link">support@logicheights.com</a>
+                                @*<p>9863 - 9867 Mill Road,</p>
+                                Cambridge, MG09 99HT.<br>
+                                Freephone:+1 800 559 6580<br>
+                                Telephone:+1 800 603 6035<br>
+                                FAX:+1 800 889 9898<br>
+                                E-mail: <a href="#" class="link">mail@demolink.org</a>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_4 prefix_1">
+                    <h2>Get In Touch</h2>
+                    
+                    @using (Html.BeginForm("Contact", "Home", null, FormMethod.Post, new { id = "contact-form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                        <fieldset>
+                            <label>
+                                
+                                @Html.TextBoxFor(model=>model.Name,new { @placeholder = "Name"})
+                                @*@Html.ValidationMessageFor(model => model.Name)*@
+                            </label>
+                            <label>
+                                @Html.TextBoxFor(model => model.Email, new { @placeholder = "Email" })
+                                @*@Html.ValidationMessageFor(model => model.Email)*@
+                            </label>
+                            <label>
+                                @Html.TextBoxFor(model => model.Phone, new { @placeholder = "Phone" })
+                                @*@Html.ValidationMessageFor(model => model.Phone)*@
+                            </label>
+
+                            @Html.TextAreaFor(model => model.Message, new { @placeholder = "Message [Minimum 10 Characters Required]" })
+                            <label>
+                            <input class="button" type="reset" value="Clear" />
+                            <input class="button" type="submit" value="Send" onsubmit="return alert('Thank You' );" />
+                            </label>
+                        </fieldset>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+@section scripts {
+
+<script type="text/javascript">
+    var message = '@message';
+    if(message)
+        alert(message);
+</script>
+
+
+}
